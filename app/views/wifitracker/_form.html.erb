@@ -1,0 +1,21 @@
+<%= form_for @wifitracker, as: :wificheck, url: wifitrackers_path do |f| %>
+
+    <%= f.hidden_field :user_id, :value => current_user.id %>
+    <%= f.label :select_date, :class =>"form-group"%>  <br> 
+    <%= f.date_select :to_date %><br><br>
+
+    <%= f.label :Select_your_wifi_quality, :class =>"form-group" %>  <br>
+    <% @ratings.each do |rating| %>
+    <%= f.radio_button 'rating_id',rating.id%>  
+    <%= rating.name %> <br>
+    <% end %><br>
+
+    <%= f.label :Select_your_wifi_name, :class =>"form-group" %><br>
+    <% @routers.each do |router| %>
+    <%= f.radio_button 'router_id',router.id%>  
+    <%= router.name %> <br>
+    <% end %>
+
+    <%= f.submit "submit", class: "btn btn-large btn-primary btn-align" %>
+
+<% end %>
