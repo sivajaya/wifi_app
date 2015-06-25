@@ -34,3 +34,17 @@
 .row {
   margin-right: 160px ! important;
   }
+  .error{
+    color:red;
+    font-style:italic;
+    font-size: 15px
+  }
+  .alert {
+  padding: 15px;
+  margin-bottom: -27px;
+  border: 1px solid transparent;
+  margin-left: 35%;
+  color: red;
+}
+.form-group-bottom {
+  margin-bottom: 6px !important;

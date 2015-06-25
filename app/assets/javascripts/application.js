@@ -12,7 +12,7 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require jquery-ui/datepicker
 //= require turbolinks
-//= require jquery-1.10.2
-//= require jquery-ui
+//= require custom
 //= require_tree ./
