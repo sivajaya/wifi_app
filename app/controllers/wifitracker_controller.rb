@@ -7,7 +7,7 @@ class WifitrackerController < ApplicationController
   def create
      @wificheck = Wificheck.new(wificheck_params)
      if @wificheck.save
-      flash[:notice] = "Wifi rating successfully sent"
+      flash[:notice] = "Successfully submitted"
       redirect_to root_path
      else
       @error="Please select your wifi name and rating"
