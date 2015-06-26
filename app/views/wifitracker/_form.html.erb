@@ -8,7 +8,7 @@
     <%= f.label :select_date, :class =>"form-group form-group-bottom"%>  <br> 
     <%= f.text_field :to_date, :id => "date" %><br><br>
        <i class="fa fa-calendar"></i>
-    <%= f.label :Select_your_wifi_quality, :class =>"form-group form-group-bottom" %>  <br>
+    <%= f.label :Select_your_wifi_rating, :class =>"form-group form-group-bottom" %>  <br>
     <% @ratings.each do |rating| %>
     <%= f.radio_button 'rating_id',rating.id%>  
     <%= rating.name %> <br>

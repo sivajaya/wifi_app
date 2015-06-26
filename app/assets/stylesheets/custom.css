@@ -31,9 +31,6 @@
   width: 24% ! important;
   float: right;
 }
-.row {
-  margin-right: 160px ! important;
-  }
   .error{
     color:red;
     font-style:italic;
@@ -48,3 +45,12 @@
 }
 .form-group-bottom {
   margin-bottom: 6px !important;
+}
+.date {
+  background-image: url(image-path('calendar.jpg'));
+}
+.ui-datepicker-trigger {
+  border: 0;
+  width: 25px !important;
+  margin-bottom: 4px !important;
+}
