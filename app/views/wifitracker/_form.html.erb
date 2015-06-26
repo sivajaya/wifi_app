@@ -1,18 +1,19 @@
 <%= form_for @wificheck, as: :wificheck, url: wifitrackers_path do |f| %>
-   <% if @error && @error.present? %>
-     <div class="error"><%= @error %></div>
-    <% end %>
-
+     <% if @error && @error.present? %>
+     <div class="error">
+     <%= @error %></div>
+     <% end %>
     <%= f.hidden_field :user_id, :value => current_user.id %>
-    <%= f.label :select_date, :class =>"form-group form-group-bottom"%> <br> 
-    <div class="input-group">
+
+    <%= f.label :select_date, :class =>"form-group form-group-bottom"%>  <br> 
+   <div class="input-group">
         <span class="input-group-addon">
             <i class="fa fa-calendar cal-size"> </i>
         </span>
         <%= f.text_field :to_date, :id => "date", :class =>"form-control form-size" %> 
     </div><br>
-
-    <%= f.label :Select_your_wifi_rating, :class =>"form-group form-group-bottom" %>  <br>
+   
+    <%= f.label :Select_your_wifi_quality, :class =>"form-group form-group-bottom" %>  <br>
     <% @ratings.each do |rating| %>
     <%= f.radio_button 'rating_id',rating.id%>  
     <%= rating.name %> <br>
@@ -26,3 +27,4 @@
 
     <%= f.submit "submit", class: "btn btn-large btn-primary btn-align" %>
 <% end %>
+
