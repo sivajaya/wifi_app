@@ -12,11 +12,10 @@
 
 .login-align{
   float: right;
-  /*margin-left: 10px;*/
+
 }
 .signup-align{
   float: right;
-  /*margin-right: 40px;*/
 }
 .ratio{
   font-size: 10px;
@@ -46,9 +45,7 @@
 .form-group-bottom {
   margin-bottom: 6px !important;
 }
-.date {
-  background-image: url(image-path('calendar.jpg'));
-}
+
 .ui-datepicker-trigger {
   border: 0;
   width: 25px !important;
