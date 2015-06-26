@@ -12,10 +12,9 @@ routers = Router.create([{ :name => 'SpritleAT1' }, { :name => 'SpritleAT2' }, {
 ratings = Rating.create([{ :name => 'Good' }, { :name =>'Idle' }, { :name => 'Slow' }, { :name => 'Bad' }])
 
 users = User.create([
-            {:email => "prabhu@gmail.com", :password => 'password',:password_confirmation => 'password'},
+            {:email => "prabu@gmail.com", :password => 'password',:password_confirmation => 'password'},
             {:email => "siva@gmail.com", :password => 'password',:password_confirmation => 'password'},
             {:email => "ranjith@gmail.com", :password => 'password',:password_confirmation => 'password'},
             {:email => "karthi@gmail.com", :password => 'password',:password_confirmation => 'password'},
             {:email => "balaji@gmail.com", :password => 'password',:password_confirmation => 'password'}
-
             ])

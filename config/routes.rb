@@ -12,6 +12,7 @@ Rails.application.routes.draw do
   devise_scope :user do
     get "sign_in", to: "devise/sessions#new"
   end
+  delete 'logout' => 'wifitracker#destroy'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

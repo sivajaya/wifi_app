@@ -30,12 +30,12 @@
   width: 24% ! important;
   float: right;
 }
-  .error{
+.error{
     color:red;
     font-style:italic;
     font-size: 15px
-  }
-  .alert {
+}
+.alert {
   padding: 15px;
   margin-bottom: -27px;
   border: 1px solid transparent;
@@ -50,4 +50,16 @@
   border: 0;
   width: 25px !important;
   margin-bottom: 4px !important;
+}
+.alert-notice{
+  color: green;
+}
+.cal-size{
+  font-size: 20px ! important;
+}
+.form-size{
+    width: 38% ! important;
+}
+.align-user{
+  float: right;
 }
