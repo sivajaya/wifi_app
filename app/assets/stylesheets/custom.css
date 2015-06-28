@@ -61,8 +61,8 @@
     width: 38% ! important;
 }
 .align-user{
-  float: right;
+  float: right ! important;
   color: seashell ! important;
-  font-size: 10px;
-  margin-right: 21px;
+  font-size: 10px ! important;
+  margin-right: 21px ! important;
 }
