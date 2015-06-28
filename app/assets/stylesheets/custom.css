@@ -62,5 +62,7 @@
 }
 .align-user{
   float: right;
-  color: white ! important;
+  color: seashell ! important;
+  font-size: 10px;
+  margin-right: 21px;
 }
