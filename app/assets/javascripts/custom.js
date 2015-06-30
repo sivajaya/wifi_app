@@ -1,4 +1,10 @@
+$(document).ready(function() {
+  $('#dataTables-example').DataTable({
+    responsive: true
+  });
+});
 $(function(){
  $("#date").datepicker(
-  {dateFormat: "yy-mm-dd"}).datepicker("setDate", new Date());
+  {dateFormat: "yy-M-dd"}).datepicker("setDate", new Date());
 });
+
