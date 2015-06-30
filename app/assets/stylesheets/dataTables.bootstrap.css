@@ -5,8 +5,6 @@ div.dataTables_length label {
   width: 50%;
   float: left;
 }
-}
-
 div.dataTables_length select {
 	width: 75px;
 	display: inline-block;
