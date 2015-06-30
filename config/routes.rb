@@ -3,6 +3,7 @@ Rails.application.routes.draw do
 
   devise_for :users
   get 'wifitrackers/new' => 'wifitracker#new'
+  get 'wifitrackers/index' => 'wifitracker#index'
   post 'wifitrackers' => 'wifitracker#create'
   # resources :wifitrackers
   # The priority is based upon order of creation: first created -> highest priority.
@@ -12,8 +13,6 @@ Rails.application.routes.draw do
   devise_scope :user do
     get "sign_in", to: "devise/sessions#new"
   end
-  delete 'logout' => 'wifitracker#destroy'
-
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
  

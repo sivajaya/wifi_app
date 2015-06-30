@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150624121316) do
+ActiveRecord::Schema.define(version: 20150629091758) do
 
   create_table "ratings", force: :cascade do |t|
     t.string   "name"
@@ -49,7 +49,7 @@ ActiveRecord::Schema.define(version: 20150624121316) do
     t.integer  "router_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.date     "to_date"
+    t.datetime "to_date"
   end
 
 end

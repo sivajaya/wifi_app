@@ -16,10 +16,16 @@ class WifitrackerController < ApplicationController
       render 'new'
      end
   end
+  def index
+     @wifichecks=Wificheck.all
+     @ratings=Rating.all
+     @routers=Router.all
+     @users=User.all
+  end
 
   private
   def wificheck_params
-    params.require(:wificheck).permit(:user_id, :to_date,:rating_id,:router_id,)
+    params.require(:wificheck).permit(:user_id,:to_date,:rating_id,:router_id)
   end
 
 end

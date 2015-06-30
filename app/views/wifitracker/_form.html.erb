@@ -10,7 +10,7 @@
         <span class="input-group-addon">
             <i class="fa fa-calendar cal-size"></i>
         </span>
-        <%= f.text_field :to_date, :id => "date", :class =>"form-control form-size" %> 
+        <%= f.text_field :to_date,:id => "date", :class =>"form-control form-size" %>
     </div><br>
    
     <%= f.label :Select_your_wifi_quality, :class =>"form-group form-group-bottom" %>  <br>
@@ -24,7 +24,10 @@
     <%= f.radio_button 'router_id',router.id%>  
     <%= router.name %> <br>
     <% end %>
-
-    <%= f.submit "submit", class: "btn btn-large btn-primary btn-align" %>
+    
+    <%= f.submit "Submit", class: "btn btn-large btn-success btn-align" %>
+    <% if current_user.email=="balaji@gmail.com"%>
+      <%= link_to("List",wifitrackers_index_path, :class =>"btn btn-large btn-primary btn-align") %>
+    <% end %>
 <% end %>
 
